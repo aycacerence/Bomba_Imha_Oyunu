@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CodeDefuse" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@drawable/bg_dark</item>
+        <item name="android:colorAccent">@color/neon_green</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DigitalTimerText">
+        <item name="android:textColor">@color/neon_green</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="GuideText">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Büyük Düğme Hakkında"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="İmhacı düğmenin rengini, üzerindeki yazıyı, pil sayısını ve indicator kodunu söylemelidir."
+            android:textColor="@color/text_soft"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="ANA İŞLEM KURALLARI&#10;&#10;Aşağıdaki kuralları sırayla takip et. İlk uygun olan eylemi yerine getir:&#10;&#10;1. Eğer düğme mavi ise ve üzerinde “İPTAL” yazıyorsa, düğmeye basılı tut.&#10;2. Eğer bombada 1’den fazla pil varsa ve düğme “PATLAT” diyorsa, hemen bas ve bırak.&#10;3. Eğer düğme beyaz ise ve indicator “CAR” ise, düğmeye basılı tut.&#10;4. Eğer bombada 2’den fazla pil varsa ve indicator “FRK” ise, hemen bas ve bırak.&#10;5. Eğer düğme sarı ise, basılı tut.&#10;6. Eğer düğme kırmızı ise ve üzerinde “BAS” yazıyorsa, hemen bas ve bırak.&#10;7. Hiçbiri uymuyorsa, basılı tut."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="BASILI TUTULAN DÜĞMEYİ BIRAKMA&#10;&#10;- Mavi şerit: Sayaçta 4 gördüğünde bırak.&#10;- Beyaz şerit: Sayaçta 1 gördüğünde bırak.&#10;- Sarı şerit: Sayaçta 5 gördüğünde bırak.&#10;- Diğer renk: Sayaçta 1 gördüğünde bırak."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBackFromButtonGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_neon_green"
+            android:text="Ana Rehber Menüsüne Dön"
+            android:textAllCaps="false"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

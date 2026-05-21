@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kadran Modülü Hakkında"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="İmhacı seri numarasını, pil sayısını ve indicator kodunu söylemelidir. Uzman aşağıdaki kurallara göre kadranın getirileceği yön sırasını belirler."
+            android:textColor="@color/text_soft"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="6dp"
+            android:text="KADRAN KURALLARI&#10;&#10;1. Eğer indicator CAR ise:&#10;   SAĞ → YUKARI → SOL&#10;&#10;2. Aksi takdirde pil sayısı 0 ise:&#10;   SOL → AŞAĞI → SAĞ&#10;&#10;3. Aksi takdirde seri numarasının son rakamı tek ise:&#10;   YUKARI → SAĞ → AŞAĞI&#10;&#10;4. Aksi takdirde seri numarasında sesli harf varsa:&#10;   AŞAĞI → SOL → YUKARI&#10;&#10;5. Hiçbiri uymuyorsa:&#10;   SOL → YUKARI → SAĞ"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBackFromDialGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_neon_green"
+            android:text="Ana Rehber Menüsüne Dön"
+            android:textAllCaps="false"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

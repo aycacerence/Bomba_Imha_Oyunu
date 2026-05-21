@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Renk Hafıza Modülü"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="İmhacı, yanan rengi, seri numarasında sesli harf olup olmadığını ve mevcut hata sayısını söylemelidir."
+            android:textColor="@color/text_soft"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Seri numarasında sesli harf varsa"
+            android:textColor="@color/neon_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 0&#10;Kırmızı ışık → Mavi&#10;Mavi ışık → Kırmızı&#10;Yeşil ışık → Sarı&#10;Sarı ışık → Yeşil"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 1&#10;Kırmızı ışık → Sarı&#10;Mavi ışık → Yeşil&#10;Yeşil ışık → Mavi&#10;Sarı ışık → Kırmızı"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 2&#10;Kırmızı ışık → Yeşil&#10;Mavi ışık → Kırmızı&#10;Yeşil ışık → Sarı&#10;Sarı ışık → Mavi"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Seri numarasında sesli harf yoksa"
+            android:textColor="@color/neon_yellow"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 0&#10;Kırmızı ışık → Mavi&#10;Mavi ışık → Sarı&#10;Yeşil ışık → Yeşil&#10;Sarı ışık → Kırmızı"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 1&#10;Kırmızı ışık → Kırmızı&#10;Mavi ışık → Mavi&#10;Yeşil ışık → Sarı&#10;Sarı ışık → Yeşil"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="HATA 2&#10;Kırmızı ışık → Sarı&#10;Mavi ışık → Yeşil&#10;Yeşil ışık → Mavi&#10;Sarı ışık → Kırmızı"
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBackFromColorMemoryGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_neon_green"
+            android:text="Ana Rehber Menüsüne Dön"
+            android:textAllCaps="false"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

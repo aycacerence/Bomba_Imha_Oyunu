@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kablolar Hakkında"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="İmhacı kablo sayısını ve renk sırasını yukarıdan aşağıya söylemelidir."
+            android:textColor="@color/text_soft"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="3 KABLO&#10;&#10;1. Eğer hiç kırmızı kablo yoksa ikinci kabloyu kes.&#10;2. Aksi takdirde son kablo beyaz ise son kabloyu kes.&#10;3. Aksi takdirde birden fazla mavi kablo varsa sonuncu mavi kabloyu kes.&#10;4. Aksi takdirde son kabloyu kes."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="4 KABLO&#10;&#10;1. Eğer birden fazla kırmızı kablo varsa ve seri numarasının son rakamı tek ise sonuncu kırmızı kabloyu kes.&#10;2. Aksi takdirde son kablo sarı ise ve kırmızı kablo yoksa ilk kabloyu kes.&#10;3. Aksi takdirde sadece bir tane mavi kablo varsa ilk kabloyu kes.&#10;4. Aksi takdirde birden fazla sarı kablo varsa son kabloyu kes.&#10;5. Aksi takdirde ikinci kabloyu kes."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="5 KABLO&#10;&#10;1. Eğer son kablo siyah ise ve seri numarasının son rakamı tek ise dördüncü kabloyu kes.&#10;2. Aksi takdirde yalnızca bir tane kırmızı kablo varsa ve birden fazla sarı kablo varsa ilk kabloyu kes.&#10;3. Aksi takdirde hiç siyah kablo yoksa ikinci kabloyu kes.&#10;4. Aksi takdirde ilk kabloyu kes."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_panel"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="5dp"
+            android:text="6 KABLO&#10;&#10;1. Eğer hiç sarı kablo yoksa ve seri numarasının son rakamı tek ise üçüncü kabloyu kes.&#10;2. Aksi takdirde yalnızca bir tane sarı kablo varsa ve birden fazla beyaz kablo varsa dördüncü kabloyu kes.&#10;3. Aksi takdirde hiç kırmızı kablo yoksa son kabloyu kes.&#10;4. Aksi takdirde dördüncü kabloyu kes."
+            android:textColor="@color/text_soft"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBackFromWireGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_neon_green"
+            android:text="Ana Rehber Menüsüne Dön"
+            android:textAllCaps="false"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

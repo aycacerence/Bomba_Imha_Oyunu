@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer background (grayish to represent the surface under the notebook) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D1D5DB" />
+        </shape>
+    </item>
+
+    <!-- The Paper -->
+    <item android:left="30dp" android:top="20dp" android:right="20dp" android:bottom="20dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/paper_white" />
+            <stroke android:width="1dp" android:color="#BDC3C7" />
+        </shape>
+    </item>
+
+    <!-- Margin line -->
+    <item android:left="80dp" android:top="20dp" android:bottom="20dp">
+        <shape>
+            <size android:width="1dp" />
+            <solid android:color="#E0C0C0" />
+        </shape>
+    </item>
+
+    <!-- Binder Rings (Simulated with small circles) -->
+    <item android:left="10dp" android:top="60dp" android:width="40dp" android:height="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#666666" />
+        </shape>
+    </item>
+    <item android:left="10dp" android:top="160dp" android:width="40dp" android:height="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#666666" />
+        </shape>
+    </item>
+    <item android:left="10dp" android:top="260dp" android:width="40dp" android:height="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#666666" />
+        </shape>
+    </item>
+    <item android:left="10dp" android:top="360dp" android:width="40dp" android:height="20dp">
+        <shape android:shape="oval">
+            <solid android:color="#666666" />
+        </shape>
+    </item>
+</layer-list>

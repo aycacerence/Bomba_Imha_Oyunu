@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Arka plan görseli: Tüm yazılar bu görselin içinde -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ilksayfa2" />
+
+    <!--
+         Görseldeki "GÖREVE BAŞLA" butonunun üzerine gelen şeffaf tıklama alanı.
+         Button yerine View kullanarak gölge veya efekt riskini tamamen kaldırıyoruz.
+    -->
+    <View
+        android:id="@+id/btnStartMission"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</FrameLayout>

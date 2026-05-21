@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Ana Arka Plan Görseli -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arkaplan" />
+
+    <ScrollView
+        android:id="@+id/roleScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/roleContentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="18dp">
+
+            <!-- Başlık -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_tech_header"
+                android:paddingLeft="32dp"
+                android:paddingTop="6dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="6dp"
+                android:text="MOD SEÇİMİ"
+                android:textColor="@color/tech_cyan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="monospace"
+                android:text="SÜRE İŞLİYOR, İLETİŞİM ŞART!"
+                android:textColor="@color/tech_text_dim"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Operasyonun başarısı için bir rol üstlenin."
+                android:textColor="@color/tech_text_dim"
+                android:textSize="12sp" />
+
+            <!-- Role 1: Defuser (Cyan Card) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tech_card_cyan"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#E6081D26"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="22dp"
+                    android:paddingBottom="4dp"
+                    android:text="İMHACI MODU"
+                    android:textColor="@color/tech_text_cyan"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_tech_panel_cyan"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgDefuserPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:background="@color/bg_dark"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_defuser_preview" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="BOMBAYLA KARŞI KARŞIYA"
+                    android:textColor="@color/tech_text_cyan"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="FİZİKSEL BOMBAYI YÖNET, KABLOYU KES."
+                    android:textColor="@color/tech_text_cyan"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btnDefuserMode"
+                    android:layout_width="110dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_tech_cyan"
+                    android:text="BAŞLA"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Role 2: Expert (Green Card) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_tech_card_green"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#E608261C"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="22dp"
+                    android:paddingBottom="4dp"
+                    android:text="UZMAN MODU"
+                    android:textColor="@color/tech_text_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_tech_panel_green"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgExpertPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:background="@color/bg_dark"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_expert_preview" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="BİLGİYİ ELİNDE TUT"
+                    android:textColor="@color/tech_text_green"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="KILAVUZU OKU, TALİMATLARI İLET."
+                    android:textColor="@color/tech_text_green"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btnExpertMode"
+                    android:layout_width="110dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_tech_green"
+                    android:text="BAŞLA"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Skor Geçmişi -->
+            <Button
+                android:id="@+id/btnScoreHistory"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_tech_red"
+                android:text="GEÇMİŞ KAYITLAR"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBackHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/transparent"
+                android:text="[ ANA MENÜ ]"
+                android:textColor="@color/tech_text_dim"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

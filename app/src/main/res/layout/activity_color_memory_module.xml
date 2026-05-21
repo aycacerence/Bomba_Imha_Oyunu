@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dark"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Renk Hafıza Modülü"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_panel"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtColorMemorySerial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Seri No: A7K4B"
+                android:textColor="@color/neon_green"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtColorMemoryMistakes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="monospace"
+                android:text="Hata: 0/3"
+                android:textColor="@color/neon_red"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtColorMemoryStage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Aşama 1/3"
+            android:textColor="@color/neon_yellow"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtActiveColor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/colorMemoryModuleCasing"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_simon_module_casing"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="8dp"
+            android:padding="30dp">
+
+            <View
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_simon_panel_rim"
+                android:rotation="-45" />
+
+            <FrameLayout
+                android:id="@+id/simonPanel"
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:layout_gravity="center"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:rotation="-45">
+
+                <View
+                    android:id="@+id/panelBlue"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="top|start"
+                    android:layout_margin="2dp" />
+
+                <View
+                    android:id="@+id/panelYellow"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="2dp" />
+
+                <View
+                    android:id="@+id/panelRed"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_margin="2dp" />
+
+                <View
+                    android:id="@+id/panelGreen"
+                    android:layout_width="82dp"
+                    android:layout_height="82dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="2dp" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="Yanan rengi uzmana söyle. Uzmanın söylediği renge bas."
+            android:textColor="@color/text_soft"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnColorRed"
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="Kırmızı"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnColorBlue"
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="Mavi"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnColorGreen"
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="Yeşil"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnColorYellow"
+                android:layout_width="0dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="Sarı"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackFromColorMemory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_neon_red"
+            android:text="Bombaya Dön"
+            android:textAllCaps="false"
+            android:textColor="@color/text_main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
